@@ -1,0 +1,18 @@
+{
+  "defaultSeverity": "warning",
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "rules": {         
+    "ordered-imports": [false], // forces the imports at the top of the files to be alphabestically ordered
+    "object-literal-sort-keys": [false],
+    "no-console": [false], // prevents you from using console.log
+    "no-unused-variable": [false], // stops you having variables that are unused in the application
+    "no-any": [true] // Stops you using hte any datatype
+  } 
+}
